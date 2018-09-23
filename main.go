@@ -15,6 +15,8 @@ const (
 	FGColorBrown
 )
 
+// ConsolePrint is the magic type that is a func
+// We will use this func type to hang more function on
 type ConsolePrint func(a ...interface{})
 
 func (p ConsolePrint) DisableAll() {
